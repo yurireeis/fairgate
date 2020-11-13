@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
+import Link from '../../Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,7 +39,9 @@ const Login = props => {
 					<form className={classes.textGroup} noValidate autoComplete="off">
 						<TextField id="outlined-basic" label="usuário" variant="outlined" />
 						<TextField id="outlined-basic" label="senha" variant="outlined" type="password" />
-						<Button variant="contained" color="primary">Entrar</Button>
+						<Link href="/main">
+							<Button variant="contained" color="primary">Entrar</Button>
+						</Link>
 					</form>
 				</Grid>
 			</Grid>

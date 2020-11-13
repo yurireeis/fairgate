@@ -112,6 +112,7 @@ const Main = props => {
 	  setOpen(false);
 	};
 	const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+
 	return (
 	  <div className={classes.root}>
 		<CssBaseline />
@@ -151,7 +152,7 @@ const Main = props => {
 		  <Divider />
 		  <List>{mainListItems}</List>
 		  <Divider />
-		  <List>{secondaryListItems}</List>
+		  {/* <List>{secondaryListItems}</List> */}
 		</Drawer>
 		<main className={classes.content}>
 		  <div className={classes.appBarSpacer} />
